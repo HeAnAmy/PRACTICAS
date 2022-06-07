@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario1</title>
+</head>
+<body>
+    <form action="">
+        <h1>Validación</h1>
+        <input type="text" required
+          minlength="5"
+          maxlength="20"
+        >
+        <input type="submit" value="Enviar">
+        
+        Edad:
+        <input type="number" required
+           min="0"
+           max="120"
+        >
+         Solo Letras Mayusculas:
+         <input type="text" required
+              pattern="[A-Za-z ]+"  
+         >
+
+
+     
+       </form>
+     
+
+
+    <h1>Formulario</h1>
+    <form method="post" action="enlaces.html" enctype="multipart/form-data">
+ 
+        <fieldset>
+            <legend>Información Personal</legend>
+            <div>
+                <label for="nombre">Nombre Completo</label>  
+                <input type="text" name="nombre" id="nombre" onkeypress="tabular(event.this);"><br>            
+            </div>
+            <div>
+                Email: 
+                <input type="email" id="correo">
+
+                Contraseña
+                <input type="password">
+                <input type="submit" value="Enviar formulario">
+      
+                Genero: 
+              
+                <input type="radio" name="genero" id="Mujer" value="Mujer"> 
+                <label for="Mujer">Mujer</label>
+                <input type="radio" name="genero" id="Hombre" value="Hombre"> 
+                <label for="Hombre">Hombre</label>
+
+            </div>
+            <button>Enviar</button>
+            
+        </fieldset>
+
+      <fieldset>
+          <legend>Objetivos </legend>
+        <label for="des">Descripción</label>
+        <textarea name="" id="des" cols="12" rows="12" placeholder="Describe cuales son tus metas...."></textarea>
+      
+        
+      </fieldset>
+
+       <div>
+             Seleccionar: 
+             <select name="" id="">
+                    <option value="">Casa Libertad</option>
+                    <option value="">Cuautepec</option>
+                    <option value="">Del Valle</option>
+                    <option value="">Centro Historico</option>
+                    <option value="">San Lorezo Tezonco</option>
+             </select>
+
+       </div>
+    
+       <div>
+         Que otros temas te interesan: (puedes seleccionar mas de uno)
+         <label for="">
+            <input type="checkbox">Robotica 
+         </label>
+
+         <label for="">
+            <input type="checkbox"> Nutrición 
+         </label>
+         
+         <label for="">
+            <input type="checkbox"> Inteligencia Artificial
+         </label>
+         
+         <label for="">
+            <input type="checkbox"> Ciencia de Datos
+         </label>
+
+       </div>
+
+       <div>
+           Elige el color: 
+           <input type="color">
+       </div>
+
+       
+
+       <div>
+        Selecciona el archivo:
+        <input type="file">
+    </div>
+
+    <div>
+        Imagen:
+    <input type="image" name="" id="" src="C:\Users\HP\Desktop\MOTIV2\images (137).jpg">
+
+    </div>
+   
+
+   <div>
+        Imagen:
+    <input type="image" name="" id="" src="https://saberimagenes.com/wp-content/uploads/2018/03/FrasesPositivas.jpg" width="220px" height="220px">
+
+    </div>
+
+    <div>
+<input type="hidden" name="oculto" value="En Espera">
+
+    </div>
+
+    <div>
+        Elige el numero: 
+     <input type="number" name="" id="">
+    </div>
+     Rango: 
+     <input type="range">
+    </div>
+
+    <div>
+        Buscar: 
+        <input type="search" name="buscar">
+    </div>
+
+    <div>
+        Limpiar el formulario: 
+        <input type="reset" name="" id="">
+    </div>
+
+    <div>
+        Telefono: 
+        <input type="tel">
+    </div>
+   
+    <div>
+        Fecha: 
+        <input type="date">
+    </div>
+
+    <div>
+     Hora: 
+     <input type="time">
+
+    </div>
+
+    <div>
+        Mi Canal de YouTube: 
+        <input type="url">
+    </div>
+
+
+
+<div>
+    <button>Enviar</button>
+</div>
+
+<div>
+    Barra de progreso: 
+    <progress min="1" max="100" value="20"></progress>
+</div>
+
+<div>
+    Metro: 
+    <meter  max="100" value="85"> </meter> 
+</div>
+
+<div>
+Lista de datos: 
+<input list="frutas" name="fruta">
+<datalist id="frutas">
+    <option value="Manzana"></option>
+    <option value="Pera"></option>
+    <option value="Melon"></option>
+    <option value="Uva"></option>
+    <option value="Sandia"></option>
+    <option value="Papaya"></option>
+    <option value="Platano"></option>
+
+
+</datalist>
+
+  
+
+
+</div>
+
+
+    <br>
+   
+   <br>
+   
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <h1>Clase de Front end</h1>
+    <form><!-- Inicio de formulario -->
+        <div class="datos">      
+            <h3>Datos personales</h3>  
+                <label for="nombre">Nombre Completo:</label>  
+                <input type="text">
+                <br>
+                <label for="email">Ingrese su cuenta institucional:</label>
+                <input type="text">
+                <br>
+                <label for="password">Contraseña:</label>
+                <input type="password">
+                <br>
+        </div>
+        <br>
+        <div class="document">
+            <h3>Documentos</h3>
+            INE:    
+            <input type="file">
+            Recibo de pago:
+            <input type="file">
+            Comprobante de domicilio:
+            <input type="file">
+        </div>
+        <div class="interes">
+            <h3>Seleccione cual es su principal interés en el curso</h3>
+            <select name="pre" id="pre">
+                <option value="">HTML</option>
+                <option value="">CSS</option>
+                <option value="">JS</option>
+                <option value="">Algoritmos</option>
+                <option value="">C++</option>
+         </select>
+        </div>
+        <br>
+    </div>
+    <div class="escuela">
+        <h3>Último grado de estudios</h3>
+         <label for="">
+            <input type="checkbox">Secundaria
+         </label>
+
+         <label for="">
+            <input type="checkbox"> Preparatoria
+         </label>
+         
+         <label for="">
+            <input type="checkbox"> Universidad 
+         </label>
+         
+         <label for="">
+            <input type="checkbox"> Maestría
+         </label>   
+    </div>
+    <br>
+    <div class="pais">
+        <h3>Elija su país de origen</h3>
+
+        <input list="pais" name="pais">
+<datalist id="pais">
+    <option value="México"></option>
+    <option value="Perú"></option>
+    <option value="Colombia"></option>
+    <option value="Argentina"></option>
+    <option value="Chile"></option>
+    <option value="Costa Rica"></option>
+    <option value="Guatemala"></option>
+
+
+</datalist>
+    </div>
+    <br>
+    <input type="submit" value="Enviar formulario">
+    <br>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+        
+        
+    </form><!-- Fin de formulario -->
+    
+</body>
+</html>

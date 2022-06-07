@@ -1,0 +1,56 @@
+
+body{
+    background-color: rgb(213, 235, 16);
+}
+
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+ul li:first-child{
+    color:purple;
+    font-weight: bolder;
+}
+
+ul li:nth-child(3){
+    color:brown;
+    font-weight: bolder;
+}
+
+ul li:last-child{
+    color:purple;
+    font-weight: bolder;
+}
+
+#enlace{
+    font-size: 35px;
+    color: lightcoral;
+}
+
+#enlace:link{
+    color:red;
+}
+
+#enlace:visited{
+    color:navy;
+}
+
+#enlace:hover{
+    color:rgb(8, 129, 8);
+}
+
+#enlace:active{
+    color:chocolate; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input[type="text"]{
+    margin-top: 20px;
+    padding:10px;
+}
+
+
+input[type="text"]:focus{
+    border: 4px dashed rgb(56, 192, 15);
+}

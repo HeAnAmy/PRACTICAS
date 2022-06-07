@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: aqua;
+}
+
+div{
+      width: 200px;
+      height: 200px;
+      border: 2px solid blue;
+      background-color: rgb(233, 218, 12);
+      text-align: center;
+      line-height: 200px;
+      margin-top: 30px;
+      margin-left: 30px;
+      position: relative;
+      animation-name: uacm;
+      animation-duration: 10s;    
+      animation-iteration-count: infinite; 
+      animation-direction: reverse; 
+}
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+
+@keyframes uacm{
+         0%{
+                background-color: bisque;
+                transform: translate(0px,0px);
+         }
+
+         25%{
+                background-color: coral;
+                transform: translate(400px,0px);
+                border-radius: 25%;
+         }
+
+        50%{
+               background-color: chartreuse;
+               transform: translate(400px,400px);
+             
+       
+        }
+
+        75%{
+              background-color: darkorange;
+              transform: translate(0px,400px);
+              transform: rotate(90deg);
+       
+        }
+
+         100%{
+              background-color: blueviolet;
+              transform: translate(0px,0px);
+         }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+

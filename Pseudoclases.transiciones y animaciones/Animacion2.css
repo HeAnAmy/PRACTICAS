@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: aqua;
+}
+
+div{
+      width: 200px;
+      height: 200px;
+      border: 2px solid blue;
+      background-color: rgb(233, 218, 12);
+      text-align: center;
+      line-height: 200px;
+      margin-top: 30px;
+      margin-left: 30px;
+      position: relative;
+      animation-name: uacm;
+      animation-duration: 10s;    
+      animation-iteration-count: infinite; 
+      animation-direction: reverse; 
+}
+
+body{
+       animation-name: colores;
+       animation-duration: 20s;
+       animation-iteration-count: 3;
+       
+
+}
+
+@keyframes uacm{
+         0%{
+                background-color: bisque;
+                transform: translate(0px,0px);
+         }
+
+         25%{
+                background-color: coral;
+                transform: translate(400px,0px);
+                border-radius: 25%;
+         }
+
+        50%{
+               background-color: chartreuse;
+               transform: translate(400px,400px);
+             
+       
+        }
+
+        75%{
+              background-color: darkorange;
+              transform: translate(0px,400px);
+              transform: rotate(90deg);
+       
+        }
+
+         100%{
+              background-color: blueviolet;
+              transform: translate(0px,0px);
+         }
+}
+
+@keyframes colores{
+    0%{
+        background-color: rgb(18, 129, 219);
+ }
+
+ 25%{
+        background-color: #f57f10;        
+ }
+
+50%{
+       background-color: rgb(204, 13, 172);            
+}
+
+75%{
+      background-color: yellow;
+}
+
+ 100%{
+      background-color: yellowgreen;
+ }
+
+}
